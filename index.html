@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Paper Scissors!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissors!</h1>
+    </header>
+
+    <div class="scoreBoard">
+     
+      <div class="currentScore">
+        <span class="score" id="user-score">0</span> :
+        <span class="score" id="comp-score">0</span>
+      </div>
+    </div>
+
+    <div class="login">
+      <form role="login">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="player-name"
+            placeholder="Enter Username"
+          />
+          <span class="loginButtonSpan>
+            <button class="btn" id="loginButton" type="submit">
+              Login
+            </button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    <div class="result">
+      <p>Paper covers rock! You win!</p>
+    </div>
+
+    
+
+    <div class="choices">
+        <div id="userOneChoice"></div>
+
+        <div>
+          <div class="choice" id="rock">
+            <span><i class="far fa-hand-rock"></i></span>
+          </div>
+          <div class="choice" id="paper">
+            <span id="paperSpan"><i class="far fa-hand-paper"></i></span>
+          </div>
+          <div class="choice" id="scissors">
+            <span><i class="far fa-hand-scissors"></i></span>
+          </div>
+        </div>
+      
+      <div id="userTwoChoice"></div>
+    </div>
+    
+
+    <p id="action-message">Make your moves</p>
+
+    <div class="chatMain">
+      <div class="chatHeader">
+        <h3 class="chatTitle">Chat</h3>
+      </div>
+      <ul id="chat-log" class="list"></ul>
+      <form role="chat">
+        <div class="inputDiv">
+          <input type="text" class="form-control" id="chat" />
+          <span class="chatButton">
+            <button class="btn" id="send-chat" type="submit">Send</button>
+          </span>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>

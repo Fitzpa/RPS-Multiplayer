@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #25272E;
+  color: white;
+  font-size: 2rem;
+}
+
+form {
+  border-radius: 10px;
+}
+
+header {
+  background: white;
+  padding: 20px;
+}
+
+header>h1 {
+  font-size: 6rem;
+  color: #25272E;
+  text-align: center;
+  font-weight: 700;
+}
+
+p {
+  font-size: 2.5rem;
+}
+
+i {
+  font-size: 5rem;
+  display: inline-block;
+  color: white;
+}
+i:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 0.5s ease-out;
+}
+
+.badge {
+  font-size: 1.5rem;
+  background: #e2584D;
+  padding: 0 .4em .3em .4em;
+  letter-spacing: .1em;
+}
+
+.chatMain {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.chatButton {
+  font-family: 'Open Sans', 'sans-serif';
+  
+}
+
+.chatbutton:hover {
+  cursor: pointer;
+  border: 4px solid red;
+  transition: all 0.5s ease-out;
+}
+
+.currentScore {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 3rem;
+}
+
+.input-group {
+  border-radius: 10px;
+}
+
+.login {
+  width: 290px;
+  margin: auto;
+}
+
+.loginButtonSpan {
+  border-radius: 10px;
+}
+
+.score {
+  font-size: 3rem;
+  margin: auto;
+  padding: 0;
+}
+
+.scoreBoard {
+  margin: 20px auto;
+  padding: 0 10px 10px 7px;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  position: relative;
+}
+
+.result {
+  text-align: center;
+  font-weight: 700;
+}
+
+.choices {
+  margin: 50px 0 10px 0;;
+  text-align: center;
+  display: grid;
+  grid-template-areas: 'playerone''rock''paper''scissors''playertwo';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.choice {
+  border: 4px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 20px;
+  margin: 0 10px;
+  width: 128px;
+  grid-template-areas: 'playerone''rock''paper''scissors''playertwo';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.choice:hover {
+  cursor: pointer;
+  border: 4px solid red;
+  transition: all 0.5s ease-out;
+}
+
+#action-message {
+  text-align: center;
+  font-weight: 700;
+}
+
+#loginButton {
+  color: black;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -45px;
+}
+
+#comp-label {
+  position: absolute;
+  top: 30px;
+  left: 155px;
+}
+
+#paperSpan {
+  position: relative;
+  left: -3px;
+}
+
+#userOneChoice {
+  display: inline-block;
+  
+}
